@@ -8,8 +8,6 @@ export default function App() {
     const [loading, setLoading] = useState(true)
   return (
     <View style={styles.container}>
-
-      <Image source={require("./assets/splash.png")} style={{width: width, height: height}} resizeMode={"contain"}/>
       <StatusBar style="auto" />
     </View>
   );
