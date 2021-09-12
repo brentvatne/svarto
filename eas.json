@@ -1,6 +1,15 @@
 {
   "build": {
     "release": {},
+    "preview": {
+      "releaseChannel": "staging",
+      "ios": {
+        "simulator": true
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
     "development": {
       "developmentClient": true,
       "distribution": "internal"
