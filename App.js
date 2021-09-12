@@ -1,11 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, {useState} from 'react';
+import AppLoading from "expo-app-loading";
+
+import {StyleSheet, Image, View, useWindowDimensions} from 'react-native';
 
 export default function App() {
+  const {width, height} = useWindowDimensions()
+    const [loading, setLoading] = useState(true)
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+        {loading &&    <AppLoading         // Instruct SplashScreen not to hide yet, we want to do this manually
+            autoHideSplash={true}
+            startAsync={() => {}}
+            onError={console.error}
+            onFinish={() => setTimeout(() => setLoading(false), 2000)}
+        />}
+      <Image source={require("./assets/splash.png")} style={{width: width, height: height}} resizeMode={"contain"}/>
       <StatusBar style="auto" />
     </View>
   );
