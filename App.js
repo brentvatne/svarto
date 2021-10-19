@@ -8,7 +8,7 @@ export default function App() {
     const [loading, setLoading] = useState(true)
   return (
     <View style={styles.container}>
-      <StatusBar style="auto" />
+      <Image source={require("./assets/splash.png")} resizeMode={"contain"} style={{width: width, height: height}} />
     </View>
   );
 }
@@ -16,7 +16,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#E8695B',
     alignItems: 'center',
     justifyContent: 'center',
   },
