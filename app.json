@@ -23,6 +23,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#E8695B"
       },
       "package": "com.svarto.myapp"
     },
