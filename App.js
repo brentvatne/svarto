@@ -14,6 +14,7 @@ export default function App() {
         resizeMode={"contain"}
         style={{ width: width, height: height }}
       />
+      <StatusBar />
     </View>
   );
 }
@@ -23,5 +24,6 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+    backgroundColor: "#E8695B"
   },
 });
